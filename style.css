@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Fix the nav bar at the top */
+nav {
+    background-color: #444;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.nav-bar {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-bar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-bar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-bar li a:hover {
+    text-decoration: underline;
+}
+
+/* Make sure the content starts after the nav bar */
+header {
+    margin-top: 60px; /* Adjust this to prevent content from being hidden behind the nav */
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.header-img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.projects li:hover {
+    background-color: #555;
+}
+
+#project-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}

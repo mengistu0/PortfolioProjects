@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- Navigation Bar at the top of the page -->
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+            <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="mengie.jpg" alt="Profile Picture" class="header-img">
+        <h1>Welcome to my Portfolio</h1>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my personal portfolio website where I showcase my skills and projects as a software engineer.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <ul id="project-list">
+            <li onclick="showDetails('Web App Project')">Web App Project</li>
+            <li onclick="showDetails('E-Commerce Project')">E-Commerce Project</li>
+            <li onclick="showDetails('Online Learning Project')">Online Learning Project</li>
+        </ul>
+
+        <div id="project-details">
+            <p>Select a project to see more details.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" onclick="scrollToProjects()">
+        <h2>About Me</h2>
+        <p>I am a senior software engineer with a passion for creating user-friendly interfaces. I have experience with various programming languages, including HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you’d like to get in touch, feel free to send me 
+            an email: <a href="mailto:tarkomengistu7@gmail.com">tarkomengistu7@gmail.com</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Menistu.T All rights reserved.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://www.github.com">GitHub</a></p>
+    </footer>
+
+   <script src="main.js"></script>
+</body>
+</html>
+
+
